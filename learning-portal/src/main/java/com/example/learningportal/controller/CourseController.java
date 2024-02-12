@@ -2,7 +2,6 @@ package com.example.learningportal.controller;
 
 import com.example.learningportal.dto.CourseDTO;
 import com.example.learningportal.service.CourseService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -15,7 +14,7 @@ public class CourseController {
 
     private final CourseService courseService;
 
-    @Autowired
+    
     public CourseController(CourseService courseService) {
         this.courseService = courseService;
     }

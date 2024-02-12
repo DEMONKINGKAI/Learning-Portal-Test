@@ -2,7 +2,6 @@ package com.example.learningportal.controller;
 
 import com.example.learningportal.dto.EnrollmentDTO;
 import com.example.learningportal.service.EnrollmentService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -15,7 +14,7 @@ public class EnrollmentController {
 
     private final EnrollmentService enrollmentService;
 
-    @Autowired
+  
     public EnrollmentController(EnrollmentService enrollmentService) {
         this.enrollmentService = enrollmentService;
     }

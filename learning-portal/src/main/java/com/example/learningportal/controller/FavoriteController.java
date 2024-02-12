@@ -2,7 +2,6 @@ package com.example.learningportal.controller;
 
 import com.example.learningportal.dto.FavoriteDTO;
 import com.example.learningportal.service.FavoriteService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -15,7 +14,7 @@ public class FavoriteController {
 
     private final FavoriteService favoriteService;
 
-    @Autowired
+  
     public FavoriteController(FavoriteService favoriteService) {
         this.favoriteService = favoriteService;
     }
